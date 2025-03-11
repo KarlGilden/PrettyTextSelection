@@ -1,9 +1,6 @@
 currentNodeId = "";
 currentSelectedElements = [];
 
-document.addEventListener("selectionchange", handleTextSelection);
-document.addEventListener("onmouseup", handleMouseUp);
-
 const handleTextSelection = () => {
     newSelection = document.getSelection();
 
@@ -65,6 +62,9 @@ const clearHighlights = () => {
     console.log("after: " + currentSelectedElements)
 };
 
-const handleMouseUp = () => {
-    
+const handleMouseUp = (e) => {
+    clearHighlights();
 };
+
+document.addEventListener("selectionchange", handleTextSelection);
+document.addEventListener("mouseup", handleMouseUp);
