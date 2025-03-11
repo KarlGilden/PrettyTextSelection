@@ -1,0 +1,43 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.selected{
+    background-color: lightblue;
+}
+
+.word{
+    border: 1px transparent solid;
+    border-radius: 2px;
+    padding: 2px;
+}
+
+.word:hover{
+    border: 1px lightgray solid;
+    cursor: pointer;
+
+}
+
+.page{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-container{
+    font-size: 2rem;
+}
+
+::-moz-selection { /* Code for Firefox */
+    color: black;
+    background: transparent;
+  }
+  
+  ::selection {
+    color: black;
+    background: transparent;
+  }
