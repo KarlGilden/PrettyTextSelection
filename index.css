@@ -9,15 +9,14 @@
 }
 
 .word{
-    border: 1px transparent solid;
+    border: 2px transparent solid;
     border-radius: 2px;
     padding: 2px;
 }
 
 .word:hover{
-    border: 1px lightgray solid;
+    border: 2px lightgray solid;
     cursor: pointer;
-
 }
 
 .page{
@@ -26,10 +25,13 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 2rem;
 }
 
 .text-container{
-    font-size: 2rem;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    max-width: 600px;
 }
 
 ::-moz-selection { /* Code for Firefox */
